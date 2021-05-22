@@ -7,7 +7,7 @@ agregar IF EXISTS indicamos que solo se elimine la base de datos "cine" si esta
 existe, asi evitamos errores, ejecutar 'DROP DATABASE cine' igual es correcto pero
 no incluimos esta ultima condicion*/
 
-CREATE DATABASE IF NO EXISTS cine;  /* Al agregar IF NO EXIST indicamos que solo
+CREATE DATABASE IF NOT EXISTS cine;  /* Al agregar IF NOT EXIST indicamos que solo
 se cree la Base de datos si esta no existe */
 
 USE cine; -- Indicamos la base de datos a utilizar.
