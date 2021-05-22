@@ -16,15 +16,16 @@ SET @variable2 := 1;
 -- Al asignar el valor a una variable esta toma un tipo de acuerdo a este
 SET @nombre = "Pedro"; -- Se declara una variable y se le asigna un valor de tipo cadena.
 SET @numero = 1; -- Se declara una variable y se le asigna un valor de tipo entero.
-SET @decimal = 1.5; -- SE declara una variable y se le asigna un valor de tipo decimal.
+SET @flotante = 1.5; -- SE declara una variable y se le asigna un valor de tipo decimal.
 
 -- Podemos efectuar operaciones aritmeticas con variables numericas
-SELECT @numero + @decimal; -- con SELECT imprmimos un valor por pantalla
+SELECT @numero + @flotante; -- con SELECT imprmimos un valor por pantalla
 
 -- Le podemos asignar este valor a otra variable
-SET @suma = @numero + @decimal;
-SET @resta = @decimal - @numero;
-SET @multiplicacion = @numero * @decimal;
-SET @division = @decimal / @numero;
+SET @suma = @numero + @flotante;
+SET @resta = @flotante - @numero;
+SET @multiplicacion = @numero * @flotante;
+SET @division = @flotante / @numero;
 
-SELECT @suma, @resta, @multiplicacion, @division; -- Podemos imprimir mas de un valor separandolos po ','
+-- Podemos imprimir mas de un valor separandolos por comas (,)
+SELECT @suma, @resta, @multiplicacion, @division; 
